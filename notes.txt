@@ -1,0 +1,18 @@
+FRONEND MOVIE APP v1 4:55:22
+
+HTML
+ - role="" - 4:57:27
+ - <input type="search"> - 4:57:54
+ - <center> - 5:00:08
+
+CSS
+ + Styling the APP - 5:03:09
+ - all - 5:11:20
+ 
+JS
+ + JS - 5:15:24
+ - API - 5:16:42
+ - fetch, .then, => - 5:24:09
+ - appendChild - 5:31:58
+ - addEventListner - 5:35:21
+ - 
