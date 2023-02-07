@@ -33,50 +33,18 @@ function returnMovies(url){
 			title.setAttribute('id', 'title');
 			image.setAttribute('class', 'card-title text-center');
 			
-			title.innerHTML = `${element.title}`;
+			title.innerHTML = `${element.title}
+				<br>
+				<a href="movie.html?id=${element.id}&title=${element.title}">Reviews</a>`;
 			image.src = IMG_PATH + element.poster_path;
 			
-
-			/*
-			const div_card = document.createElement('div');
-			div_card.setAttribute('class', 'card');
-			
-			const div_row = document.createElement('div');
-			div_row.setAttribute('class', 'row');
-			
-			const div_column = document.createElement('div');
-			div_column.setAttribute('class', 'column');
-			
-			const image = document.createElement('img');
-			image.setAttribute('id', 'image');
-			image.setAttribute('class', 'thumbnail');
-			
-			const title = document.createElement('h3');
-			title.setAttribute('id', 'title');
-			
-			const center = document.createElement('center');
-
-			title.innerHTML = `${element.title}`;
-			image.src = IMG_PATH + element.poster_path;
-			*/
 
 			div_card_body.appendChild(title);
 			div_card.appendChild(image);
 			div_card.appendChild(div_card_body);
 			div_col.appendChild(div_card);
 			
-			main.appendChild(div_col);
-			
-			/*
-			center.appendChild(image);
-			div_card.appendChild(center);
-			div_card.appendChild(title);
-			div_column.appendChild(div_card);
-			div_row.appendChild(div_column);
-
-   			main.appendChild(div_row);
-			*/
-			
+			main.appendChild(div_col);		
 			
 		});
 	});
